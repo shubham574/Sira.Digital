@@ -24,6 +24,8 @@ tl.from('.page1 .inner-content h1 span',{
   stagger:.05
 })
 }
+
+
 function crsrAnim(){
     const cursor = document.querySelector(".cursor");
     const innerContent = document.querySelector(".inner-content");

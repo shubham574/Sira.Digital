@@ -1,0 +1,84 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#blog-list {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+body.dark #blog-list {
+  background: #1f1f1f;
+}
+
+.blog-post {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+.blog-post:last-child {
+  border-bottom: none;
+}
+.blog-post .date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+.blog-post .title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0.2rem 0;
+  color: #111;
+  text-decoration: none;
+}
+.blog-post .description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.tag {
+  display: inline-block;
+  background: #e0f2ff;
+  margin-right: 5px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.tag.active {
+  background: #0070f3;
+  color: #fff;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 2rem;
+}
